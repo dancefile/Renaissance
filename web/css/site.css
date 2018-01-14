@@ -1,0 +1,265 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: normal;
+    font-size: 12px;
+    /*white-space: nowrap;*/
+}
+
+.grid-view td {
+    font-size: 12px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+/* M Dolgopolov */
+label{
+    font-weight: normal;
+}
+.field-category-solo > .control-label {
+    display:none;
+}
+#category-dances, 
+#category-clas, 
+#category-skay, 
+#category-program, 
+#category-solo,
+#category-chesses_list,
+#tur-typezahod,
+#tur-dances,
+#tur-typeskating,
+.field-tur-status
+{
+    border: 1px solid #cccccc;
+    background: #fff9e8;
+    padding: 10px;
+}
+#category-dances label, 
+#category-clas label,
+#category-chesses_list label,
+#tur-typezahod label,
+#tur-dances label,
+#tur-typeskating label
+{
+    background: rgb(221, 221, 221);
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+
+.panel, .panel-heading{
+    border-radius: 0;
+}
+
+.field-category-agemin, 
+.field-category-agemax, 
+.field-category-otd_id,
+.field-category-solo,
+.field-category-program,
+.field-category-skay,
+.field-tur-zahodcount,
+.field-tur-typezahod,
+.field-tur-parnexttur,
+.field-tur-typeskating,
+.field-tur-status,
+.field-tur-nomer
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.field-category-agemin, 
+.field-category-agemax{
+    width: 90px;
+}
+
+table.turs {
+    border-spacing: 0px 5px;
+    border-collapse: separate;
+    width: 400px;
+}
+
+table .colaps {
+    background: gray;
+    color: #fff;
+}
+
+.colaps td {
+    padding: 10px;
+}
+
+.turRow {
+    display: none;
+}
+
+.turRow input {
+    width: 50px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+td.number {
+    width: 50px;
+}
+
+/*.leftBlock {
+    width: 450px;
+    float: left;
+    margin-right: 30px;
+}*/
+
+.field-in-dancer1-date,
+.field-in-dancer2-date
+{
+    width: 240px;
+    float:left;
+    margin-right: 15px;
+}
+
+.field-in-dancer1-clas_id_st,
+.field-in-dancer2-clas_id_st,
+.field-in-dancer1-clas_id_la,
+.field-in-dancer2-clas_id_la
+{
+    width: 120px;
+    float:left;
+    margin-right: 15px;
+}
+
+.field-in-dancer1-clas_id_la,
+.field-in-dancer2-clas_id_la
+{
+    margin-right: 0;
+}
+
+.flex-container {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.one {
+    background: #508694;
+    flex: 0 2 100%;
+    padding: 30px;  
+}
+.two {
+    background: #BB844C;
+    flex: 0 2 100%;
+    padding: 30px;
+}
+
+.three {
+    text-align: center;
+}
+
+.three button {
+    width: 150px;
+    height: 40px;
+}
